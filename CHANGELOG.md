@@ -1,3 +1,15 @@
+## v2.4.1: 2016-05-24
+
++ Added LICENSE file to release package
+* Various documentation improvements (@RyanZim)
+* Better line-numbers in errors (@dgofman)
+
+## v2.4.1: 2016-01-23
+
++ Strict-mode support (@mde)
++ Express 4 support (@mde)
++ Configurable localsName option (@mde)
+
 ## v2.3.4: 2015-09-04
 
 + Whitespace slurp tag syntax -- `<%_  _%>` (@andidev)

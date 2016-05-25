@@ -6,7 +6,7 @@
     "engine",
     "ejs"
   ],
-  "version": "2.3.4",
+  "version": "2.4.2",
   "author": "Matthew Eernisse <mde@fleegix.org> (http://fleegix.org)",
   "contributors": [
     "Timothy Gu <timothygu99@gmail.com> (https://timothygu.github.io)"
@@ -35,6 +35,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "sample": "npm install express && node sample/index.js",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
     "doc": "rimraf out && jsdoc -c jsdoc.json lib/* docs/jsdoc/*",
     "devdoc": "rimraf out && jsdoc -p -c jsdoc.json lib/* docs/jsdoc/*"
