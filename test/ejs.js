@@ -727,11 +727,12 @@ suite('include()', function () {
         fixture('include.html'));
   });
 
-  test('include ejs with relative path for views', function () {
-    var file = 'test/fixtures/menu-views.ejs',
+  test('include ejs with set root path', function () {
+    var file = 'test/fixtures/include-root.ejs',
         viewsPath = path.join(__dirname, 'fixtures');
-    assert.equal(ejs.render(fixture('menu-views.ejs'), {pets: users}, {filename: file, views: viewsPath}),
-      fixture('menu.html'));
+    assert.equal(ejs.render(fixture('include-root.ejs'), {pets: users}, {filename: file, delimiter: '@',root: viewsPath}),
+      fixture('include.html'));
+
   });
 
   test('work when nested', function () {
