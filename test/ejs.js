@@ -730,7 +730,7 @@ suite('include()', function () {
   test('include ejs with set root path', function () {
     var file = 'test/fixtures/include-root.ejs',
         viewsPath = path.join(__dirname, 'fixtures');
-    assert.equal(ejs.render(fixture('include-root.ejs'), {pets: users}, {filename: file, delimiter: '@'}),
+    assert.equal(ejs.render(fixture('include-root.ejs'), {pets: users}, {filename: file, delimiter: '@',root:viewsPath}),
       fixture('include.html'));
 
   });
